@@ -1,0 +1,161 @@
+﻿@model List<YouTubeApiProject.Models.YouTubeVideoModel>
+@{
+    ViewData["Title"] = "News Page";
+}
+
+<head>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet"> <!-- Add Open Sans font -->
+	<style>
+		/* Set the background color for the entire page */
+		body {
+			background-color: white; /* Dark blue */
+			margin: 0;
+			padding: 0;
+		}
+
+		h2 {
+			font-family: 'Montserrat', sans-serif; /* Apply Montserrat font */
+			font-weight: bold; /* Make the text bold */
+			margin: 0; /* Remove default margin for h2 */
+		}
+
+		h4 {
+			font-family: 'Montserrat', sans-serif; /* Apply Montserrat font */
+			font-weight: bold; /* Make the text bold */
+			margin: 0; /* Remove default margin for h3 */
+		}
+
+		h5 {
+			font-family: 'Montserrat', sans-serif; /* Apply Montserrat font */
+			font-weight: bold; /* Make the text bold */
+			margin: 0; /* Remove default margin for h3 */
+		}
+
+		/* Style for p elements */
+		p {
+			font-family: 'Open Sans', sans-serif; /* Apply Open Sans font */
+		}
+
+		/* Set a specific size for images */
+		.ss-thumb {
+			width: 100%; /* Make image width responsive to container */
+			max-width: 200px; /* Set a maximum width for the image */
+			height: auto; /* Maintain aspect ratio */
+			border-radius: 10px; /* Optional: Rounded corners */
+		}
+
+		/* Optionally, add some padding or margins */
+		.similar-song {
+			text-align: center; /* Center the text under the image */
+			margin-bottom: 20px; /* Add space between songs */
+		}
+
+		/* Style for audio controls */
+		audio {
+			width: 90%; /* Adjust the width as needed */
+			max-width: 300px; /* Set a maximum width for larger screens */
+		}
+
+	</style>
+
+
+</head>
+
+
+<!-- Top artist section -->
+<section class="similar-songs-section">
+	<div class="container-fluid">
+		<div class="text-center">
+			<h2><br> <!-- Line break for spacing -->Top Artist</h2>
+		</div>
+		<br> <!-- Line break for spacing -->
+		<div class="row">
+			<div class="col-xl-3 col-sm-6">
+				<div class="similar-song">
+					<img class="ss-thumb" src="img/Singer1.png" alt="">
+					<h4>Justin Bieber</h4>
+					<p>72.8 million subscribers</p>
+				</div>
+			</div>
+			<div class="col-xl-3 col-sm-6">
+				<div class="similar-song">
+					<img class="ss-thumb" src="img/Singer2.png" alt="">
+					<h4>Taylor Swift</h4>
+					<p>58.2 million subscribers</p>
+				</div>
+			</div>
+			<div class="col-xl-3 col-sm-6">
+				<div class="similar-song">
+					<img class="ss-thumb" src="img/Singer3.png" alt="">
+					<h4>Eminem Music</h4>
+					<p>59.5 million subscribers</p>
+				</div>
+			</div>
+			<div class="col-xl-3 col-sm-6">
+				<div class="similar-song">
+					<img class="ss-thumb" src="img/Singer4.png" alt="">
+					<h4>Billie Eilish</h4>
+					<p>49.4 million subscribers</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Top song section -->
+<section class="similar-songs-section">
+	<div class="container-fluid">
+		<div class="text-center">
+			<h2><br> <!-- Line break for spacing -->Top Song</h2>
+		</div>
+		<br> <!-- Line break for spacing -->
+		<div class="row">
+			<div class="col-xl-3 col-sm-6">
+				<div class="similar-song">
+					<img class="ss-thumb" src="img/Singer5.png" alt="">
+					<br>
+					<br><h5>Lady Gaga, Bruno Mars <br /> Die with a smile</h5>
+					<audio controls>
+						<source src="music-files/1.mp3" type="audio/mpeg">
+						Your browser does not support the audio element.
+					</audio>
+				</div>
+			</div>
+			<div class="col-xl-3 col-sm-6">
+				<div class="similar-song">
+					<img class="ss-thumb" src="img/Singer6.png" alt="">
+					<br>
+					<br><h5>Benson Boone <br /> Beautiful Things</h5>
+					<audio controls>
+						<source src="music-files/2.mp3" type="audio/mpeg">
+						Your browser does not support the audio element.
+					</audio>
+				</div>
+			</div>
+			<div class="col-xl-3 col-sm-6">
+				<div class="similar-song">
+					<img class="ss-thumb" src="img/Singer7.png" alt="">
+					<br>
+					<br><h5>Bryant Barnes x D4vd <br /> I'd Rather Pretend</h5>
+					<audio controls>
+						<source src="music-files/3.mp3" type="audio/mpeg">
+						Your browser does not support the audio element.
+					</audio>
+				</div>
+			</div>
+			<div class="col-xl-3 col-sm-6">
+				<div class="similar-song">
+					<img class="ss-thumb" src="img/Singer8.png" alt="">
+					<br>
+					<br><h5>Sabrina Carpenter <br /> Taste</h5>
+					<audio controls>
+						<source src="music-files/4.mp3" type="audio/mpeg">
+						Your browser does not support the audio element.
+					</audio>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+

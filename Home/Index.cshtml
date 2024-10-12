@@ -1,0 +1,229 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="path/to/your/custom.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Add Open Sans font -->
+    <style>
+        /* Set the background color for the entire page */
+        body {
+            background-color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Style for h1 elements */
+        h1 {
+            color: #f44754; /* Set h1 color */
+            font-family: 'Montserrat', sans-serif; /* Apply Montserrat font */
+            font-weight: bold; /* Make the text bold */
+            font-size: 4rem; /* Increase header size (adjust as needed) */
+            display: inline; /* Display h1 inline to position "for" next to it */
+        }
+
+        h2 {
+            color: darkblue; /* Set h2 color */
+            font-family: 'Montserrat', sans-serif; /* Apply Montserrat font */
+            font-weight: bold; /* Make the text bold */
+            font-size: 4rem; /* Increase header size (adjust as needed) */
+            margin: 0; /* Remove default margin for h2 */
+        }
+
+        h3 {
+            font-family: 'Montserrat', sans-serif; /* Apply Montserrat font */
+            font-weight: bold; /* Make the text bold */
+            margin: 0; /* Remove default margin for h2 */
+        }
+
+        /* Style for p elements */
+        p {
+            font-family: 'Open Sans', sans-serif; /* Apply Open Sans font */
+            color: black; /* Optional: Set paragraph color for visibility */
+        }
+
+        /* Additional styling for hero text */
+        .hs-text {
+            padding: 20px; /* Add some padding around the text */
+        }
+
+        .hr-img img {
+            max-width: 100%; /* Ensure the image is responsive */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        .carousel-section {
+            margin-bottom: 40px; /* Adjust the value to control the gap */
+        }
+
+        .section {
+            margin-top: 40px; /* If needed, adjust the margin for the blog post section */
+        }
+
+        .card.bg-dark {
+            background-color: #343a40 !important; /* Keep the dark background */
+        }
+
+    </style>
+</head>
+
+
+<div class="hs-text">
+   <h1>Music for</h1> <!-- "for" in white -->
+   <h2>everyone</h2>
+   <br> <!-- Line break for spacing -->
+   <p>Unleash your passion for music! Search, play, and curate playlists that reflect your unique taste. Music is universal—let's celebrate it together! Created by Amirah Hanis.</p>
+</div>
+                    
+<!-- /featured post -->
+<div class="text-center">
+    <h3><br> <!-- Line break for spacing -->Today's Top</h3>
+</div>
+<section class="carousel-section">
+    <div class="container-fluid p-sm-0">
+        <div id="featuredPostSlider" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!-- First carousel item -->
+                <div class="carousel-item active">
+                    <div class="d-flex">
+                        <article class="card bg-dark text-center text-white border-0 rounded-0 mx-2" style="width: 25%;">
+                            <img class="card-img rounded-0 img-fluid w-100" src="img/featured-post/post-1.png" alt="post-thumb">
+                        </article>
+                        <article class="card bg-dark text-center text-white border-0 rounded-0 mx-2" style="width: 25%;">
+                            <img class="card-img rounded-0 img-fluid w-100" src="img/featured-post/post-2.png" alt="post-thumb">
+                        </article>
+                        <article class="card bg-dark text-center text-white border-0 rounded-0 mx-2" style="width: 25%;">
+                            <img class="card-img rounded-0 img-fluid w-100" src="img/featured-post/post-3.png" alt="post-thumb">
+                        </article>
+                        <article class="card bg-dark text-center text-white border-0 rounded-0 mx-2" style="width: 25%;">
+                            <img class="card-img rounded-0 img-fluid w-100" src="img/featured-post/post-4.png" alt="post-thumb">
+                        </article>
+                    </div>
+                </div>
+
+                <!-- Add more carousel items -->
+                <div class="carousel-item">
+                    <div class="d-flex">
+                        <article class="card bg-dark text-center text-white border-0 rounded-0 mx-2" style="width: 25%;">
+                            <img class="card-img rounded-0 img-fluid w-100" src="img/featured-post/post-5.png" alt="post-thumb">
+                        </article>
+                        <article class="card bg-dark text-center text-white border-0 rounded-0 mx-2" style="width: 25%;">
+                            <img class="card-img rounded-0 img-fluid w-100" src="img/featured-post/post-6.png" alt="post-thumb">
+                        </article>
+                        <article class="card bg-dark text-center text-white border-0 rounded-0 mx-2" style="width: 25%;">
+                            <img class="card-img rounded-0 img-fluid w-100" src="img/featured-post/post-7.png" alt="post-thumb">
+                        </article>
+                        <article class="card bg-dark text-center text-white border-0 rounded-0 mx-2" style="width: 25%;">
+                            <img class="card-img rounded-0 img-fluid w-100" src="img/featured-post/post-8.png" alt="post-thumb">
+                        </article>
+                    </div>
+                </div>
+
+                <!-- More carousel items as needed -->
+            </div>
+
+            <!-- Controls for previous and next -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#featuredPostSlider" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#featuredPostSlider" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- blog post -->
+<section class="section">
+    <div class="container">
+        <div class="row masonry-container">
+            <div class="col-lg-4 col-sm-6 mb-5">
+                <article class="text-center">
+                    <img class="img-fluid mb-4" src="img/masonary-post/post-1.png" alt="post-thumb">
+                    <p class="text-uppercase mb-2">K-pop</p>
+                    <h4 class="title-border"><a class="text-dark">This is: K-Music</a></h4>
+                    <p>
+                        Dive into the world of K-pop with the latest hits from your favorite idols and rising stars. 
+                        From high-energy beats to smooth ballads, this playlist has it all.
+                    </p>
+                </article>
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-5">
+                <article class="text-center">
+                    <img class="img-fluid mb-4" src="img/masonary-post/post-2.png" alt="post-thumb">
+                    <p class="text-uppercase mb-2">New Release</p>
+                    <h4 class="title-border"><a class="text-dark">Ariana Grande - Lisa</a></h4>
+                    <p>
+                        Stay ahead of the curve with the freshest tracks across all genres. 
+                        Discover the newest sounds and trending artists, updated regularly for your listening pleasure.
+                    </p>
+                </article>
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-5">
+                <article class="text-center">
+                    <img class="img-fluid mb-4" src="img/masonary-post/post-3.png" alt="post-thumb">
+                    <p class="text-uppercase mb-2">Moody Fix</p>
+                    <h4 class="title-border"><a class="text-dark">Olivia Rodrigo, Selena Gomez</a></h4>
+                    <p>
+                        Need music to match your vibe? Whether you’re feeling reflective or mellow, 
+                        this playlist delivers soulful tunes perfect for unwinding or deep thinking.
+                    </p>
+                </article>
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-5">
+                <article class="text-center">
+                    <img class="img-fluid mb-4" src="img/masonary-post/post-5.png" alt="post-thumb">
+                    <p class="text-uppercase mb-2">Chase Atlantic Mix</p>
+                    <h4 class="title-border"><a class="text-dark" href="blog-single.html">Lana Del Rey | The Weeknd | Arctic Monkeys</a></h4>
+                    <p>
+                        Experience the unique fusion of alternative, R&B, and rock with Chase Atlantic’s signature sound. 
+                        Perfect for fans of genre-blending music with deep lyrics and immersive melodies.
+                    </p>
+                </article>
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-5">
+                <article class="text-center">
+                    <img class="img-fluid mb-4" src="img/masonary-post/post-4.png" alt="post-thumb">
+                    <p class="text-uppercase mb-2">Chill with Lofi</p>
+                    <h4 class="title-border"><a class="text-dark">lofi beats | lofi chill | chillhop | lofi garden | Jazz Vibes</a></h4>
+                    <p>
+                        Sit back and relax with calming lofi beats. Perfect for studying, working, 
+                        or simply chilling, this playlist helps set the mood with soft, laid-back rhythms.
+                    </p>
+                </article>
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-5">
+                <article class="text-center">
+                    <img class="img-fluid mb-4" src="img/masonary-post/post-6.png" alt="post-thumb">
+                    <p class="text-uppercase mb-2">Pop-Mix</p>
+                    <h4 class="title-border"><a class="text-dark">Charlie puth, Ariana Grande, Nicky Minaj and more</a></h4>
+                    <p>
+                        Get your dose of catchy tunes and upbeat vibes with this Pop Mix. 
+                        Featuring the biggest names in pop, it’s the perfect soundtrack for your day, 
+                        whether you’re at home or on the go.
+                    </p>
+                </article>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- /blog post -->
+
+
+<!-- Carousel JavaScript settings -->
+<script>
+    var carouselElement = document.querySelector('#featuredPostSlider');
+    var carousel = new bootstrap.Carousel(carouselElement, {
+        interval: 3000,  // Adjust the interval to 3 seconds for better readability
+        wrap: true  // Enable infinite looping of slides
+    });
+</script>

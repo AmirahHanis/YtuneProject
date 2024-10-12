@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - YouTubeApiProject</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Shrikhand&display=swap" rel="stylesheet"> <!-- Added Shrikhand -->
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/YouTubeApiProject.styles.css" asp-append-version="true" />
+</head>
+
+<body style="font-family: 'Open Sans', sans-serif;">
+
+    <!-- Apply font-family to body -->
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-light custom-header">
+            <div class="container-fluid">
+                <a class="navbar-brand text-white d-flex align-items-center" asp-area="" asp-controller="Home" asp-action="Index">
+                    <img class="logo" src="~/img/logomusic.png" alt="Logo" style="margin-right: 10px;">
+                    <span class="shrikhand-title">YTune</span> <!-- Added span with class -->
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-controller="YouTube" asp-action="Index">Music</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-controller="News" asp-action="Index">News</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
